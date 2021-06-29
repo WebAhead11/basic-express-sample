@@ -1,9 +1,15 @@
 const form = document.querySelector('form');
 
-form.addEventListener("input", async function(event) {
-    event.preventDefault();
+form.addEventListener("input", function(event) {
     const inp = document.getElementById('inp')
-    let search = await fetch('../data/data.json')
+    let search = fetch('/autocomplete')
         .then(response => response.json())
-        .then(data => console.log(data))
+        .then(data => {
+            data.filter(element => {
+                let arr = Array.from(element.firstName);
+                console.log(arr);
+                console.log(arr.includes(inp.value));
+            });
+        })
+
 })
