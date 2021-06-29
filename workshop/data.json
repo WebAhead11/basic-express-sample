@@ -1,86 +1,85 @@
-{
-  "1": {
+[{
     "id": 1,
     "firstName": "Hassan",
     "lastName": "Hassouna",
     "age": 26,
     "salary": "3000$"
   },
-  "2": {
+  {
     "id": 2,
     "firstName": "Hseen",
     "lastName": "Abu Laban",
     "age": 22,
     "salary": "1000$"
   },
-  "3": {
+  {
     "id": 3,
     "firstName": "Sheren",
     "lastName": "Zouabi",
     "age": 27,
     "salary": "7000$"
   },
-  "4": {
+  {
     "id": 4,
     "firstName": "Dana",
     "lastName": "Amit",
     "age": 32,
     "salary": "7500$"
   },
-  "5": {
+  {
     "id": 5,
     "firstName": "Mario",
     "lastName": "Saliba",
     "age": 23,
     "salary": "Malyan Masari"
   },
-  "6": {
+  {
     "id": 6,
     "firstName": "Mahmod",
     "lastName": "Mahamed",
     "age": 27,
     "salary": "4700$"
   },
-  "7": {
+  {
     "id": 7,
     "firstName": "Nidaa",
     "lastName": "Abu Sneineh",
     "age": 34,
     "salary": "2000$"
   },
-  "8": {
+  {
     "id": 8,
     "firstName": "Adan",
     "lastName": "Saada",
     "age": 24,
     "salary": "2000$"
   },
-  "9": {
+  {
     "id": 9,
     "firstName": "Abed",
     "lastName": "Makhoul",
     "age": 29,
     "salary": "3500$"
   },
-  "10": {
+  {
     "id": 10,
     "firstName": "Fadi",
     "lastName": "Watted",
     "age": 28,
     "salary": "3500$"
   },
-  "11": {
+  {
     "id": 11,
     "firstName": "Noor",
     "lastName": "Sawaed",
     "age": 24,
     "salary": "3850$"
   },
-  "12": {
+  {
     "id": 12,
     "firstName": "Elias",
     "lastName": "Salom",
     "age": 26,
     "salary": "5$"
   }
-}
+]

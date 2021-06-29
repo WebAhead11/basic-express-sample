@@ -4,7 +4,7 @@ const data = require('../data.json')
 
 function autocomplete(req, res) {
     // console.log("fkevrthng");
-    console.log(data);
-    res.end("btata")
+    // console.log(data);
+    
 }
-module.exports = autocomplete;
+module.exports = autocomplete; 
