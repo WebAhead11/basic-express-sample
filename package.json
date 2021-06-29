@@ -21,5 +21,8 @@
   "homepage": "https://github.com/oliverjam/node-file-server#readme",
   "devDependencies": {
     "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1"
   }
 }
