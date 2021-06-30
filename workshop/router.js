@@ -12,6 +12,7 @@ function router(request, response) {
   }
    else if (url==="/autocomplete") {
     autocompleteHandler(request, response);
+    console.log(url);
   } else {
     missingHandler(request, response);
   }
