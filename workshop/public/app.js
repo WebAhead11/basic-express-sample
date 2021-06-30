@@ -1,10 +1,10 @@
 const form = document.querySelector('form');
 
-form.addEventListener("input", function() {
-    
-    let search = fetch('/autocomplete')
+form.addEventListener("input", function(event) {
+    const inp = document.getElementById('inp')
+    let search = fetch(`/autocomplete?firstName=${inp.value}`)
         .then(response => response.json())
-        .then(data => {console.log(data);
+        .then(data => {
+            console.log(data);
         })
-
 })

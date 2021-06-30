@@ -1,14 +1,15 @@
 const fs = require("fs");
 const path = require("path");
-const data = require('../data/data.json')
+const data1 = require('../data/data.json')
 
 function autocomplete(req, res) {
-    // console.log("fkevrthng");
-    console.log(data);
-    const inp = document.getElementById('inp')
-    let arr = data.filter(element => {
-        return element.firstName.includes(inp.value)
+    // let arr2 = document.getElementById('inp')
+    const data = new URLSearchParams(req.url.split('?')[1]);
+    const name = data.get('firstName');
+    let arr = data1.filter(element => {
+        return element.firstName.toUpperCase().includes(name.toUpperCase()) ||
+            element.lastName.toUpperCase().includes(name.toUpperCase())
     });
     res.end(JSON.stringify(arr))
 }
-module.exports = autocomplete; 
+module.exports = autocomplete;
