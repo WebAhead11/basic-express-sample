@@ -15,7 +15,8 @@ function createPerson(data) {
     const dataValues = Object.values(data)
     ul.appendChild(li)
     li.append(arraySort(dataValues))
-
+    li.classList.remove('show')
+    li.classList.add('newPerson')
 
 }
 
