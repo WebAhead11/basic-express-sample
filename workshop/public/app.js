@@ -1,27 +1,39 @@
+const inp = document.getElementById('inp')
 const form = document.getElementById('form');
 const ul = document.getElementById('options');
+const result = document.getElementById('result');
 
-function arraySort(arr) {
-    arr.forEach(e => {
-        let span = document.createElement('span');
-        span.innerText = e
-        return span
-    });
-}
 
 function createPerson(data) {
     ul.innerText = "";
-    const li = document.createElement('li');
+    const firstLi = document.createElement('li');
+    const secondLi = document.createElement('li');
+    const thirdLi = document.createElement('li');
+    const fourthLi = document.createElement('li');
+    const fifthLi = document.createElement('img');
+    const div = document.getElementById('result');
+    div.innerHTML = '';
     const dataValues = Object.values(data)
-    ul.appendChild(li)
-    li.append(arraySort(dataValues))
-
+    console.log(dataValues);
+    // div.append(sorted.innerHTML);
+    div.append(firstLi)
+    firstLi.append((dataValues[0]))
+    div.append(secondLi)
+    secondLi.append((dataValues[1]))
+    div.append(thirdLi)
+    thirdLi.append((dataValues[2]))
+    div.append(fourthLi)
+    fourthLi.append((dataValues[3]))
+    div.append(fifthLi)
+    fifthLi.src = dataValues[4];
+    ul.classList.remove('show')
+    inp.value = "";
 
 }
 
-form.addEventListener("input", function () {
-
+form.addEventListener("input", function() {
     const inp = document.getElementById('inp')
+
 
     if (inp.value === "") {
         ul.innerHTML = '';
@@ -29,7 +41,7 @@ form.addEventListener("input", function () {
         return;
     }
 
-    let search = fetch(`/autocomplete?letter=${inp.value}`)
+    fetch(`/autocomplete?letter=${inp.value}`)
         .then(response => response.json())
         .then(data => {
             ul.innerText = '';
@@ -37,18 +49,18 @@ form.addEventListener("input", function () {
                 console.log(data.length);
 
                 const li = document.createElement('li');
-                const span = document.createElement('span');
-                const span1 = document.createElement("span");
+                const firstNameSpan = document.createElement('span');
+                const lastNameSpan = document.createElement("span");
 
-                li.addEventListener("click", function () {
+                li.addEventListener("click", function() {
                     createPerson(element)
 
                 })
 
-                span.textContent = 'First Name: ' + element.firstName
-                span1.textContent = 'Last Name: ' + element.lastName;
-                li.appendChild(span);
-                li.appendChild(span1);
+                firstNameSpan.textContent = 'First Name: ' + element.firstName
+                lastNameSpan.textContent = 'Last Name: ' + element.lastName;
+                li.appendChild(firstNameSpan);
+                li.appendChild(lastNameSpan);
                 ul.appendChild(li);
                 li.classList.add('selecting')
             });
@@ -57,5 +69,8 @@ form.addEventListener("input", function () {
             } else {
                 ul.classList.add("show")
             }
+
+
+
         })
 });

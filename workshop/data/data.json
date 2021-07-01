@@ -2,72 +2,84 @@
         "firstName": "Hassan",
         "lastName": "Hassouna",
         "age": 26,
-        "salary": "3000$"
+        "salary": "3000$",
+        "img": "https://scontent.ftlv6-1.fna.fbcdn.net/v/t1.18169-9/11350532_10207220429854122_852393392814577764_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=KDY6MHUTGDAAX9LMVwA&_nc_ht=scontent.ftlv6-1.fna&oh=add6038879a4f5e48e3b2fd56d2605ab&oe=60E325BD"
     },
     {
         "firstName": "Hseen",
         "lastName": "Abu Laban",
         "age": 22,
-        "salary": "10$"
+        "salary": "2460$",
+        "img": "https://scontent.ftlv6-1.fna.fbcdn.net/v/t1.18169-9/24067839_1638459616175258_4015542848064825152_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=o4Zk3iN3qNQAX-GEtY-&_nc_ht=scontent.ftlv6-1.fna&oh=ae9d43b0fd0b6a092212e309e667acb1&oe=60E285B5"
     },
     {
         "firstName": "Sheren",
         "lastName": "Zouabi",
         "age": 27,
-        "salary": "7000$"
+        "salary": "7000$",
+        "img": "https://avatars.githubusercontent.com/u/22002193?v=4"
     },
     {
         "firstName": "Dana",
         "lastName": "Amit",
         "age": 32,
-        "salary": "7500$"
+        "salary": "7500$",
+        "img": "https://avatars.githubusercontent.com/u/85409961?v=4"
     },
     {
         "firstName": "Mario",
         "lastName": "Saliba",
         "age": 23,
-        "salary": "Malyan Masari"
+        "salary": "Malyan Masari",
+        "img": "https://avatars.githubusercontent.com/u/24195641?v=4"
     },
     {
         "firstName": "Mahmod",
         "lastName": "Mahamed",
         "age": 27,
-        "salary": "4700$"
+        "salary": "4700$",
+        "img": "https://avatars.githubusercontent.com/u/37122503?v=4"
     },
     {
         "firstName": "Nida",
         "lastName": "Abu Sneineh",
         "age": 34,
-        "salary": "2000$"
+        "salary": "2000$",
+        "img": "https://avatars.githubusercontent.com/u/85409961?v=4"
     },
     {
         "firstName": "Adan",
         "lastName": "Saada",
         "age": 24,
-        "salary": "2000$"
+        "salary": "2000$",
+        "img": "https://avatars.githubusercontent.com/u/84378977?v=4"
     },
     {
         "firstName": "Abed",
         "lastName": "Watad",
         "age": 29,
-        "salary": "3500$"
+        "salary": "3500$",
+        "img": "https://avatars.githubusercontent.com/u/85409961?v=4"
     },
     {
         "firstName": "Fadi",
         "lastName": "Makhoul",
         "age": 28,
-        "salary": "3500$"
+        "salary": "3500$",
+        "img": "https://avatars.githubusercontent.com/u/78348737?v=4"
     },
     {
         "firstName": "Noor",
         "lastName": "Sawaed",
         "age": 24,
-        "salary": "3850$"
+        "salary": "3850$",
+        "img": "https://avatars.githubusercontent.com/u/83413600?v=4"
     },
     {
         "firstName": "Elias",
         "lastName": "Salom",
         "age": 26,
-        "salary": "5$"
+        "salary": "2000$",
+        "img": "https://avatars.githubusercontent.com/u/39850311?v=4"
     }
 ]
