@@ -1,5 +1,4 @@
-const fs = require("fs");
-const path = require("path");
+
 const data1 = require('../data/data.json')
 
 function autocomplete(req, res) {
