@@ -1,18 +1,31 @@
 const form = document.getElementById('form');
-const ul = document.getElementById('options')
+const ul = document.getElementById('options');
 
-function createPerson(data) {
-    console.table(data)
-    
+function arraySort(arr) {
+    arr.forEach(e => {
+        let span = document.createElement('span');
+        span.innerText = e
+        return span
+    });
 }
 
-form.addEventListener("input", function (event) {
+function createPerson(data) {
+    ul.innerText = "";
+    const li = document.createElement('li');
+    const dataValues = Object.values(data)
+    ul.appendChild(li)
+    li.append(arraySort(dataValues))
+
+
+}
+
+form.addEventListener("input", function () {
 
     const inp = document.getElementById('inp')
 
     if (inp.value === "") {
         ul.innerHTML = '';
-        // ul.classList.remove("show")
+
         return;
     }
 
@@ -37,6 +50,7 @@ form.addEventListener("input", function (event) {
                 li.appendChild(span);
                 li.appendChild(span1);
                 ul.appendChild(li);
+                li.classList.add('selecting')
             });
             if (inp.value === "") {
                 ul.classList.remove("show")
@@ -45,7 +59,3 @@ form.addEventListener("input", function (event) {
             }
         })
 });
-form.addEventListener("submit", function (event) {
-    event.preventDefault()
-
-})

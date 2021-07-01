@@ -1,82 +1,70 @@
 [{
-        "id": 1,
         "firstName": "Hassan",
         "lastName": "Hassouna",
         "age": 26,
         "salary": "3000$"
     },
     {
-        "id": 2,
         "firstName": "Hseen",
         "lastName": "Abu Laban",
         "age": 22,
         "salary": "10$"
     },
     {
-        "id": 3,
         "firstName": "Sheren",
         "lastName": "Zouabi",
         "age": 27,
         "salary": "7000$"
     },
     {
-        "id": 4,
         "firstName": "Dana",
         "lastName": "Amit",
         "age": 32,
         "salary": "7500$"
     },
     {
-        "id": 5,
         "firstName": "Mario",
         "lastName": "Saliba",
         "age": 23,
         "salary": "Malyan Masari"
     },
     {
-        "id": 6,
         "firstName": "Mahmod",
         "lastName": "Mahamed",
         "age": 27,
         "salary": "4700$"
     },
     {
-        "id": 7,
         "firstName": "Nida",
         "lastName": "Abu Sneineh",
         "age": 34,
         "salary": "2000$"
     },
     {
-        "id": 8,
         "firstName": "Adan",
         "lastName": "Saada",
         "age": 24,
         "salary": "2000$"
     },
     {
-        "id": 9,
         "firstName": "Abed",
         "lastName": "Watad",
         "age": 29,
         "salary": "3500$"
     },
     {
-        "id": 10,
         "firstName": "Fadi",
         "lastName": "Makhoul",
         "age": 28,
         "salary": "3500$"
     },
     {
-        "id": 11,
         "firstName": "Noor",
         "lastName": "Sawaed",
         "age": 24,
         "salary": "3850$"
     },
     {
-        "id": 12,
         "firstName": "Elias",
         "lastName": "Salom",
         "age": 26,

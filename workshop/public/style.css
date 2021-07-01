@@ -42,7 +42,8 @@ body {
   outline: none;
 }
 
-li {
+/* lists of the search (the auto complete) */
+.selecting {
   list-style: none;
   box-sizing: unset;
   padding: 20px 0px;
@@ -51,7 +52,8 @@ li {
   transform: rotate();
 }
 
-ul li:hover {
+/* lists of the search on hover */
+.selecting:hover {
   border-bottom: solid rgb(73, 0, 0) 1px;
   border-radius: 3px 30px ;
   background: #d4d4d4;
@@ -59,12 +61,23 @@ ul li:hover {
   /* box-shadow: 1px 1px 1px blanchedalmond; */
 }
 
-ul li:active {
+
+/* lists of the search on click */
+.selecting:active {
   background: #8d8d8d;
   transition: 90ms;
 
 }
 
+/* selected list item  */
+.newPerson {
+  list-style: none;
+  box-sizing: unset;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+
+}
 
 .icon {
   height: 50px;
@@ -82,4 +95,3 @@ ul li:active {
   display: flex;
   flex-direction: column;
 }
-
