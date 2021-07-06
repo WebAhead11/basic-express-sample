@@ -1,4 +1,3 @@
-
 const data1 = require('../data/data.json')
 
 function autocomplete(req, res) {
