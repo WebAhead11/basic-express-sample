@@ -5,28 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/loginstyle.css">
+    <link rel="stylesheet" href="/loginstyle.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Welcome To WebAhead10</h1>
-        <form action="">
+        <form action="/user" method="POST">
             <div class="user_name">
                 <label for="">Please Enter You Username: </label>
-                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Username" name="name" value="">
             </div>
             <div class="mail">
                 <label for="">Please Enter You Email: </label>
-                <input type="text" placeholder="Example@outlook.com">
+                <input type="text" name="email" placeholder="Example@outlook.com">
             </div>
             <div class="pass">
                 <label for="">Please Enter You Password: </label>
-                <input type="text" placeholder="*********">
+                <input type="text" name="passwork" placeholder="*********">
             </div>
+            <input type="submit" value="Submit">
         </form>
-        <button type="submit">Submit</button>
+        
     </div>
 </body>
 

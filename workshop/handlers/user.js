@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+const data1 = require('../data/data.json')
 
-function homeHandler(request, response) {
+function userHandler(request, response) {
     // public directory is one level above this, so we need the ".."
-    console.log(request.body);
-    const filePath = path.join(__dirname, "..", "public", "login.html");
+    console.log(request.body.email);
+    const filePath = path.join(__dirname, "..", "public", "index.html");
     fs.readFile(filePath, (error, file) => {
         if (error) {
             console.log(error);
@@ -16,4 +17,4 @@ function homeHandler(request, response) {
         }
     });
 }
-module.exports = homeHandler;
+module.exports = userHandler;
