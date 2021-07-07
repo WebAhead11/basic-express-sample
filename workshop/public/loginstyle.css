@@ -61,6 +61,10 @@ body {
     padding: 10px;
 }
 
+.container form .sub {
+    padding: 10px;
+}
+
 .container button {
     background: #fff;
     border: 1px solid #dfe1e5;
