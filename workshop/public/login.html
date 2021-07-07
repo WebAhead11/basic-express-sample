@@ -5,30 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/loginstyle.css">
+    <link rel="stylesheet" href="/loginstyle.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Welcome To WebAhead10</h1>
-        <form action="/workshop/server.js" method="POST">
-            <div class="user_name">
-                <label for="">Please Enter You Username: </label>
-                <input type="text" placeholder="Username">
-            </div>
+        <form action="/user" method="POST">
             <div class="mail">
                 <label for="">Please Enter You Email: </label>
-                <input type="text" placeholder="Example@outlook.com">
+                <input type="text" name="email" placeholder="Example@outlook.com">
             </div>
             <div class="pass">
                 <label for="">Please Enter You Password: </label>
-                <input type="text" placeholder="*********">
-            </div>br
-            <div class="sub">
-                <input type="submit" value="Sumbit">
+                <input type="password" placeholder="*********">
             </div>
-
+            <div class="subb">
+                <button class='sub' type="submit" value="submit">Submit</button>
+            </div>
         </form>
     </div>
 </body>

@@ -3,14 +3,16 @@
         "lastName": "Hassouna",
         "age": 26,
         "salary": "3000$",
-        "img": "https://avatars.githubusercontent.com/u/82958594?v=4"
+        "img": "https://avatars.githubusercontent.com/u/82958594?v=4",
+        "email": "hhasona@gmail.com"
     },
     {
         "firstName": "Hseen",
         "lastName": "Abu Laban",
         "age": 22,
         "salary": "2460$",
-        "img": "https://avatars.githubusercontent.com/u/77922406?s=400&u=0d42f29b2315ad45343048a76125ab4596ac2981&v=4"
+        "img": "https://avatars.githubusercontent.com/u/77922406?s=400&u=0d42f29b2315ad45343048a76125ab4596ac2981&v=4",
+        "email": "hseen@gmail.com"
     },
     {
         "firstName": "Sheren",

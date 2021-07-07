@@ -1,29 +1,33 @@
 {
-  "name": "node-file-server",
-  "version": "1.0.0",
-  "description": "An introduction to accessing and serving files with Node.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node workshop/server.js",
-    "practice": "nodemon workshop/practice.js",
-    "dev": "nodemon workshop/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oliverjam/node-file-server.git"
-  },
-  "keywords": [],
-  "author": "Oliver Phillips <hello@oliverjam.es> (https://oliverjam.es/)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oliverjam/node-file-server/issues"
-  },
-  "homepage": "https://github.com/oliverjam/node-file-server#readme",
-  "devDependencies": {
-    "nodemon": "^2.0.2"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "node-fetch": "^2.6.1"
-  }
+    "name": "node-file-server",
+    "version": "1.0.0",
+    "description": "An introduction to accessing and serving files with Node.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node workshop/server.js",
+        "practice": "nodemon workshop/practice.js",
+        "dev": "nodemon workshop/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/oliverjam/node-file-server.git"
+    },
+    "keywords": [],
+    "author": "Oliver Phillips <hello@oliverjam.es> (https://oliverjam.es/)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/oliverjam/node-file-server/issues"
+    },
+    "homepage": "https://github.com/oliverjam/node-file-server#readme",
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    },
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.5",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "node-fetch": "^2.6.1",
+        "node-waf": "^1.0.0"
+    }
 }

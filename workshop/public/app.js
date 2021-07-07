@@ -31,48 +31,36 @@ function createPerson(data) {
 
 }
 
-form.addEventListener("input", function () {
-    const inp = document.getElementById('inp')
+fetch('/autocomplete')
+    .then(response => response.json())
+    .then(data => {
+        ul.innerText = '';
+
+        console.log(data.length);
+
+        // // const li = document.createElement('li');
+        // const firstNameSpan = document.createElement('span');
+        // const lastNameSpan = document.createElement("span");
 
 
-    if (inp.value === "") {
-        ul.innerHTML = '';
+        createPerson(data)
 
-        return;
-    }
 
-    fetch(`/autocomplete?letter=${inp.value}`)
-        .then(response => response.json())
-        .then(data => {
-            ul.innerText = '';
-            data.forEach(element => {
-                console.log(data.length);
+        firstNameSpan.textContent = 'First Name: ' + data.firstName
+        lastNameSpan.textContent = 'Last Name: ' + data.lastName;
+        li.appendChild(firstNameSpan);
+        li.appendChild(lastNameSpan);
+        ul.appendChild(li);
+        // li.classList.add('selecting')
 
-                const li = document.createElement('li');
-                const firstNameSpan = document.createElement('span');
-                const lastNameSpan = document.createElement("span");
-
-                li.addEventListener("click", function () {
-                    createPerson(element)
-
-                })
-                firstNameSpan.textContent = 'First Name: ' + element.firstName
-                lastNameSpan.textContent = 'Last Name: ' + element.lastName;
-                li.appendChild(firstNameSpan);
-                li.appendChild(lastNameSpan);
-                ul.appendChild(li);
-                li.classList.add('selecting')
-            });
-            if (inp.value === "") {
-                ul.classList.remove("show")
-            } else {
-                ul.classList.add("show")
-            }
-        })
-        .catch(error => {
-            console.error(error);
-            response.writeHead(404, { "content-type": "text/html" });
-            response.end("<h1>Not found</h1>");
-        })
+        if (inp.value === "") {
+            ul.classList.remove("show")
+        } else {
+            ul.classList.add("show")
+        }
     })
-           
+    .catch(error => {
+        console.error(error);
+        response.writeHead(404, { "content-type": "text/html" });
+        response.end("<h1>Not found</h1>");
+    })

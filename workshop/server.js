@@ -1,10 +1,24 @@
-const http = require("http");
+const express = require("express")
 const router = require("./router");
-const exp = require('express');
-const app = exp();
 const PORT = process.env.PORT || 3000;
-const server = http.createServer(router);
-app.get('/', (req, res) => {
-    res.sendFile('index.html');
-})
+const cookiePa = require('cookie-parser');
+const jwt = require('jsonwebtoken');
+const SECRET = "nkA$SD89&&282hd";
+
+const server = express();
+server.use(cookiePa());
+server.use(express.json())
+server.use(express.urlencoded({ extended: true }))
+server.use((req, res, next) => {
+    const token = req.cookies.user;
+    if (token) {
+        const user = jwt.verify(token, SECRET);
+        req.user = user;
+    }
+    next();
+});
+
+server.use(router)
+server.use(express.static('workshop/public'))
+
 server.listen(PORT, () => console.log(`Listening at http://localhost:3000`));
