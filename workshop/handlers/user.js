@@ -12,8 +12,11 @@ function userHandler(req, res) {
         res.cookie("user", token, { maxAge: 600000 });
         res.sendFile(filePath);
     } else {
+        // res.send(500, 'Invalid Email,Please try again.')
+        // res.send('<script>alert("Invalid Email,please try again.")</script>')
         const filePath = path.join(__dirname, "..", "public", "login.html");
         res.sendFile(filePath);
+
     }
 
 }

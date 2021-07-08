@@ -20,5 +20,4 @@ server.use((req, res, next) => {
 
 server.use(router)
 server.use(express.static('workshop/public'))
-
 server.listen(PORT, () => console.log(`Listening at http://localhost:3000`));

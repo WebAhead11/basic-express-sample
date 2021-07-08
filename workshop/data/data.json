@@ -12,76 +12,86 @@
         "age": 22,
         "salary": "2460$",
         "img": "https://avatars.githubusercontent.com/u/77922406?s=400&u=0d42f29b2315ad45343048a76125ab4596ac2981&v=4",
-        "email": "hseen@gmail.com"
+        "email": "anahseen@outlook.com"
     },
     {
         "firstName": "Sheren",
         "lastName": "Zouabi",
         "age": 27,
         "salary": "7000$",
-        "img": "https://avatars.githubusercontent.com/u/22002193?v=4"
+        "img": "https://avatars.githubusercontent.com/u/22002193?v=4",
+        "email": "anahseen@gmail.com"
     },
     {
         "firstName": "Dana",
         "lastName": "Amit",
         "age": 32,
         "salary": "7500$",
-        "img": "https://avatars.githubusercontent.com/u/85409961?v=4"
+        "img": "https://avatars.githubusercontent.com/u/85409961?v=4",
+        "email": "anahseen@gmail.com"
     },
     {
         "firstName": "Mario",
         "lastName": "Saliba",
         "age": 23,
         "salary": "Malyan Masari",
-        "img": "https://avatars.githubusercontent.com/u/24195641?v=4"
+        "img": "https://avatars.githubusercontent.com/u/24195641?v=4",
+        "email": "mario91sss@gmail.com"
     },
     {
         "firstName": "Mahmod",
         "lastName": "Mahamed",
         "age": 27,
         "salary": "4700$",
-        "img": "https://avatars.githubusercontent.com/u/37122503?v=4"
+        "img": "https://avatars.githubusercontent.com/u/37122503?v=4",
+        "email": "mahmod.mhamid@hotmail.com"
     },
     {
         "firstName": "Nida",
         "lastName": "Abu Sneineh",
         "age": 34,
         "salary": "2000$",
-        "img": "https://avatars.githubusercontent.com/u/85409961?v=4"
+        "img": "https://avatars.githubusercontent.com/u/85409961?v=4",
+        "email": "nida@gmail.com"
     },
     {
         "firstName": "Adan",
         "lastName": "Saada",
         "age": 24,
         "salary": "2000$",
-        "img": "https://avatars.githubusercontent.com/u/84378977?v=4"
+        "img": "https://avatars.githubusercontent.com/u/84378977?v=4",
+        "email": "adan@gmail.com"
     },
     {
         "firstName": "Abed",
         "lastName": "Watad",
         "age": 29,
         "salary": "3500$",
-        "img": "https://avatars.githubusercontent.com/u/85409961?v=4"
+        "img": "https://avatars.githubusercontent.com/u/85409961?v=4",
+        "email": "abed@gmail.com"
     },
     {
         "firstName": "Fadi",
         "lastName": "Makhoul",
         "age": 28,
         "salary": "3500$",
-        "img": "https://avatars.githubusercontent.com/u/78348737?v=4"
+        "img": "https://avatars.githubusercontent.com/u/78348737?v=4",
+        "email": "fadi@gmail.com"
     },
     {
         "firstName": "Noor",
         "lastName": "Sawaed",
         "age": 24,
         "salary": "3850$",
-        "img": "https://avatars.githubusercontent.com/u/83413600?v=4"
+        "img": "https://avatars.githubusercontent.com/u/83413600?v=4",
+        "email": "noor@gmail.com"
     },
     {
         "firstName": "Elias",
         "lastName": "Salom",
         "age": 26,
         "salary": "2000$",
-        "img": "https://avatars.githubusercontent.com/u/39850311?v=4"
+        "img": "https://avatars.githubusercontent.com/u/39850311?v=4",
+        "email": "elias@gmail.com"
     }
 ]

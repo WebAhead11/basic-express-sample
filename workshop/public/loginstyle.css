@@ -28,7 +28,7 @@ body {
 }
 
 .container form {
-    width: 1000px;
+    width: 600px;
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
