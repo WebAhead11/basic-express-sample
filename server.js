@@ -1,12 +1,12 @@
 const express = require("express")
 const router = require("./router");
 const PORT = process.env.PORT || 3000;
-const cookiePa = require('cookie-parser');
+const cookieParser = require('cookie-parser');
 const jwt = require('jsonwebtoken');
 const SECRET = "nkA$SD89&&282hd";
 
 const server = express();
-server.use(cookiePa());
+server.use(cookieParser());
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
 server.use((req, res, next) => {
@@ -19,5 +19,5 @@ server.use((req, res, next) => {
 });
 
 server.use(router)
-server.use(express.static('workshop/public'))
+server.use(express.static('public'))
 server.listen(PORT, () => console.log(`Listening at http://localhost:3000`));

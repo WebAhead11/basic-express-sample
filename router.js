@@ -1,15 +1,14 @@
 const express = require("express")
 const router = express.Router()
 
-const userHandler = require("./handlers/user");
-// const missingHandler = require("./handlers/missing");
+const userHandler = require("./handlers/login");
 const autocompleteHandler = require("./handlers/autocomplete");
 const homeHandler = require("./handlers/home")
-const logoutHandler = require('./handlers/log_out')
+const logoutHandler = require('./handlers/logout')
 
 router.get("/", homeHandler)
-router.post("/user", userHandler)
+router.post("/login", userHandler)
+router.get('/logout', logoutHandler)
 router.get('/autocomplete', autocompleteHandler);
-router.get('/log_out', logoutHandler)
 
 module.exports = router;
