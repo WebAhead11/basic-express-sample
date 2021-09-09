@@ -27,7 +27,7 @@ function createPerson(data) {
     ul.classList.remove('show')
 
 }
-log_out.addEventListener('click', () => window.location.href = '/log_out')
+log_out.addEventListener('click', () => window.location.href = '/logout')
 
 fetch('/autocomplete')
     .then(response => response.json())
